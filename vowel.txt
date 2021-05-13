@@ -1,0 +1,17 @@
+using System;
+class CountViwel {
+  static void Main() {
+    string phrase;
+    Console.WriteLine("Enter a string: ");
+    phrase = Console.ReadLine();
+    phrase = phrase.ToLower();
+    int count=0;
+    char temp;
+    for(int i=0; i<phrase.Length; i++){
+        temp=phrase[i];
+        if(temp=='a' || temp=='e' || temp=='i' || temp=='o' || temp=='u')
+            count++;
+    }
+    Console.WriteLine("Number of vowels is {0}", count);
+  }
+}
